@@ -1,30 +1,26 @@
 
-#CodeBook for Course Project of Programming with R
+#Cleaning Data - Coursera
+
+#Thomas Matthew Hughes
 
 ##Raw Data
 
-The raw data for this project is accelerometer data collected from the Samsung Galaxy S smartphone, and was provided to us at the links below:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-Data file: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-CodeBook: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
-This data included both the raw sampled data (folder ../Inertial Signals) and features apparently based on the raw data. For the purpose of this project, I am only looking at the features, not the raw data.
+- 'features_info.txt': Shows information about the variables used on the feature vector.
 
-There are 3 types of files:
+- 'features.txt': List of all features.
 
-x: rows of feature measurements
-y: the activity labels corresponding to each row of X. Encoded as numbers.
-subject: the subjects on which each row of X was measured. Encoded as numbers.
-In addition, to determine which features are required, we look at the list of features:
+- 'activity_labels.txt': Links the class labels with their activity name.
 
-features.txt
-The encoding from activity labels ids to descriptive names.
+- 'train/X_train.txt': Training set.
 
-activity_labels.txt
-Data load
+- 'train/y_train.txt': Training labels.
 
-The Y, S and X data is loaded from each of the training and test datasets, directly as their final type.
-Only the columns of interest from X are loaded, that is the mean() and sd() columns. We determine the columns by examining the feature names (from features.txt) for patterns “-mean()” or “-std()”.
-All of these files are fixed format text files.
+- 'test/X_test.txt': Test set.
+
+- 'test/y_test.txt': Test labels.
+
 
 ##Transformation
 
